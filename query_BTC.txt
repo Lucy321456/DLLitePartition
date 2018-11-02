@@ -1,0 +1,49 @@
+--------------------basic query:-------------------------------------------------------------------------
+BQ1:
+q(?x)<-12:Person(?x)
+
+BQ2:
+q(?x)<-http://www.w3.org/2000/01/rdf-schema#label(?x,Tim Berners-Lee)
+
+BQ3:
+q(?x)<-12:Person(?x), http://www.w3.org/2000/01/rdf-schema#label(?x,Tim Berners-Lee)
+
+BQ4:
+q(?x,?y,?z)<-5:core#subject(14:01z0hl,?x), 5:core#broader(?x,?y), http://www.w3.org/2000/01/rdf-schema#comment(?x,?z)
+
+BQ5:
+q(?x,?y)<-4237:affiliation(1438167:tim-berners-lee, ?x), 12:Organization(?x), http://www.w3.org/2000/01/rdf-schema#label(?x,?y)
+
+BQ6:
+q(?x,?z)<-5:core#subject(?x,15:Love),34:name(?x,?y),http://www.w3.org/2000/01/rdf-schema#label(?x,?z) 
+
+BQ7:
+q(?x,?y,?z,?d)<-12:Person(?x), 34:prizes(?x, 14:0dt39), 175:field(?x,?y), 175:knownFor(?x,?z),175:almaMater(?x,?d)
+15:Nobel_Prize_in_Physics<>14:0dt39
+
+BQ8:
+q(?x,?y,?z,?d)<-175:Film(?x), 175:writer(?x,15:Robert_Thoeren),  175:director(?x,?y), http://www.w3.org/2000/01/rdf-schema#label(?x,?z), 12:primaryTopic(?d,?x)
+
+
+
+
+------------------non basic query-----------------------------------------------------------------------
+NQ1:
+q(?x)<-34:prizes(14:01w7np, ?x), 34:prizes(?y,?x), http://www.w3.org/2000/01/rdf-schema#label(?y, ?z)
+
+NQ2:
+q(?x,?y)<-175:director(?x,15:George_Lucas),175:writer(?x,?y), http://www.w3.org/2000/01/rdf-schema#label(?y,?z)
+
+NQ3:
+q(?x,?y,?z)<-http://www.w3.org/2000/01/rdf-schema#label(?x,Alan Turing@en) , 175:influencedBy(?y,?x) , http://www.w3.org/2000/01/rdf-schema#label(?y,?z)
+
+NQ4:
+q(?x,?y,?z,?d)<-175:Work(?x), 175:writer(?x,15:Robert_Thoeren),  175:director(?x,?y), http://www.w3.org/2000/01/rdf-schema#comment(?x,?z), 12:primaryTopic(?d,?x), http://www.w3.org/2000/01/rdf-schema#comment(?y,?e)
+
+NQ5:
+q(?x,?y,?z,?e,?x1)<-12:Person(?x), 34:prizes(?x, 14:0dt39), http://www.w3.org/2000/01/rdf-schema#comment(?x,?y), 175:doctoralAdvisor(?x,?z), http://www.w3.org/2000/01/rdf-schema#label(?z,?e)
+15:Baron_Blackett<>14:01w7np
+15:Nobel_Prize_in_Physics<>14:0dt39
+
+NQ6:
+q(?y,?x,?z,?d,?e)<-175:EducationalInstitution(?x), 175:almaMater(?y,?x), 12:Person(?y), 34:prizes(?y, 14:0dt39), 175:field(?y,?z), 175:knownFor(?y,?d), http://www.w3.org/2000/01/rdf-schema#label(?d,?e)

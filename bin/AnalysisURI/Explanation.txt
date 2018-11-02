@@ -1,0 +1,2 @@
+1.Simplify the original NTTiple files, i.e., compute the prefixes of URIs and represent a term as prefix:localName;
+2.Translating the original NTTriple files to new defined format "s<>p<>o". 

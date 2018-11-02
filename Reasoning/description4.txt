@@ -1,0 +1,4 @@
+satisfiability checking and conjunctive query answering:
+
+step1. checking satisfiability
+step2. conjunctive query answering

@@ -1,0 +1,5 @@
+construct a DB for the ABox of a subKB
+
+step1. create a DB for each subABox;
+step2. store the assertions in this subABox into the DB;
+step3. create index of the tables in this DB.

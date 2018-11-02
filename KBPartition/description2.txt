@@ -1,0 +1,5 @@
+partition KB:
+
+step 1. extract TBox and ABox from an ontology;
+step 2. partition ABox into multiple subABoxes;
+step 3. compute a DL-LiteA TBox for each subABox.

@@ -1,0 +1,2 @@
+rewrite a conjunctive query into multiple conjunctive queries
+translate a conjunctive query into a SQL query

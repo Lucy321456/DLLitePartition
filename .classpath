@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Preprocessing"/>
+	<classpathentry kind="src" path="KBPartition"/>
+	<classpathentry kind="src" path="MetaTermAndAxiom"/>
+	<classpathentry kind="src" path="Reasoning"/>
+	<classpathentry kind="src" path="AdditionalFunction"/>
+	<classpathentry kind="src" path="KBConstruction"/>
+	<classpathentry kind="src" path="Query"/>
+	<classpathentry kind="src" path="QueryRewrite"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="D:/connect jar/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DLLite_Rapid"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,7 @@
+steps:
+
+step1. drop duplication
+step2. preprocess containing prefix analysis and owl:sameAs materialization
+step3. KB partition containing ABox partition and sub-TBoxes construction
+step4. store the ABoxes of subKBs into DBs
+step5. satisfiability checking and conjunctive query answering

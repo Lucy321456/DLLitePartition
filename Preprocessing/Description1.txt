@@ -1,0 +1,6 @@
+Pre-processing:
+
+step1. drop duplication;
+step2. compute prefixes of terms and extract owl:sameAs relations;
+step3. materialize owl:sameAs relations;
+step4. materialize queries, i.e., replace names in queries with their delegates.
